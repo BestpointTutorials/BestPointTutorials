@@ -1,21 +1,28 @@
-name: GitHub-Profile-Summary-Cards
+- name: GitHub-Profile-Summary-Cards
+  uses: vn7n24fzkq/github-profile-summary-cards@v0.4.0-hotfix.3
 
-on:
-  create:
-  push:
-  schedule: # execute every 24 hours
-    - cron: "* */24 * * *"
-  workflow_dispatch:
 
-jobs:
-  build:
-    runs-on: ubuntu-latest
-    name: generate
 
-    steps:
-      - uses: actions/checkout@v2
-      - uses: vn7n24fzkq/github-profile-summary-cards@release
-        env:
-          GITHUB_TOKEN: ${{ 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 }}
-        with:
-          USERNAME: ${{ github.repository_owner }}
+
+
+# name: GitHub-Profile-Summary-Cards
+
+# on:
+#   create:
+#   push:
+#   schedule: # execute every 24 hours
+#     - cron: "* */24 * * *"
+#   workflow_dispatch:
+
+# jobs:
+#   build:
+#     runs-on: ubuntu-latest
+#     name: generate
+
+#     steps:
+#       - uses: actions/checkout@v2
+#       - uses: vn7n24fzkq/github-profile-summary-cards@release
+#         env:
+#           GITHUB_TOKEN: ${{ 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 }}
+#         with:
+#           USERNAME: ${{ github.repository_owner }}
