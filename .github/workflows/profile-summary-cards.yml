@@ -14,7 +14,7 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-      - uses: BestPointTutorials/github-profile-summary-cards@release
+      - uses: vn7n24fzkq/github-profile-summary-cards@release
         env:
           GITHUB_TOKEN: ${{ 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 }}
         with:
